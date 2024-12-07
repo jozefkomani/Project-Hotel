@@ -428,3 +428,45 @@ iframe {
   transform: scale(1.1);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
+.reviews {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.reviews h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.review-card {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.review-card h3 {
+  font-size: 1.5em;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.review-card p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.stars {
+  font-size: 1.2em;
+  color: gold;
+}
