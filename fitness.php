@@ -31,17 +31,17 @@
       
       <div class="features">
         <div class="feature-item">
-          <img src="treadmill.jpg" alt="Treadmills">
+          <img src="./Img/treadmill.jpg" alt="Treadmills">
           <h3>Cardio Equipment</h3>
           <p>From treadmills to ellipticals, burn calories with ease using our modern cardio machines.</p>
         </div>
         <div class="feature-item">
-          <img src="weights.jpg" alt="Weights">
+          <img src="./Img/weights.jpg" alt="Weights">
           <h3>Strength Training</h3>
           <p>Build muscle and tone your body with our range of weights and resistance equipment.</p>
         </div>
         <div class="feature-item">
-          <img src="yoga.jpg" alt="Yoga Classes">
+          <img src="./Img/yoga.jpg" alt="Yoga Classes">
           <h3>Yoga & Pilates</h3>
           <p>Relax and rejuvenate with our guided yoga and pilates classes, suitable for all levels.</p>
         </div>

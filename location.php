@@ -32,13 +32,13 @@
     <section class="location-images">
       <div class="image-gallery">
         <div class="image-item">
-          <img src="hotel-exterior.jpg" alt="The Mark Hotel Exterior">
+          <img src="./Img/hotel-exterior.jpg" alt="The Mark Hotel Exterior">
         </div>
         <div class="image-item">
-          <img src="central-park-view.jpg" alt="View of Central Park">
+          <img src="./Img/central-park-view.jpg" alt="View of Central Park">
         </div>
         <div class="image-item">
-          <img src="hotel-interior.jpg" alt="The Mark Hotel Interior">
+          <img src="./Img/hotel-interior.jpg" alt="The Mark Hotel Interior">
         </div>
       </div>
     </section>

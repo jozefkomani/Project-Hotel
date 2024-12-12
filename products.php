@@ -29,14 +29,14 @@
 
       <div class="room-list">
         <div class="room-item">
-          <img src="luxury-room.jpg" alt="Luxury Room">
+          <img src="./Img/luxury-room.jpg" alt="Luxury Room">
           <h3>Luxury Room</h3>
           <p>Spacious and elegantly designed with premium amenities.</p>
           <p class="price">$350 per night</p>
           <a href="book-now.html" class="btn">Book Now</a>
         </div>
         <div class="room-item">
-          <img src="executive-suite.jpg" alt="Executive Suite">
+          <img src="./Img/executive-suite.jpg" alt="Executive Suite">
           <h3>Executive Suite</h3>
           <p>A premium suite with stunning views and top-tier services.</p>
           <p class="price">$550 per night</p>
@@ -47,7 +47,7 @@
       <section class="service">
         <h2>Spa & Wellness</h2>
         <div class="service-description">
-          <img src="spa.jpg" alt="Spa & Wellness">
+          <img src="./Img/spa.jpg" alt="Spa & Wellness">
           <p>Relax and rejuvenate with our exclusive spa treatments.</p>
         </div>
         <a href="book-spa.html" class="btn">Book Spa Treatment</a>
@@ -56,7 +56,7 @@
       <section class="service">
         <h2>Fine Dining</h2>
         <div class="service-description">
-          <img src="restaurant.jpg" alt="Fine Dining">
+          <img src="./Img/restaurant.jpg" alt="Fine Dining">
           <p>Indulge in exquisite meals prepared by our world-class chefs.</p>
         </div>
         <a href="menu.html" class="btn">Explore Menu</a>
@@ -65,7 +65,7 @@
       <section class="service">
         <h2>Fitness Center</h2>
         <div class="service-description">
-          <img src="gym.jpg" alt="Fitness Center">
+          <img src="./Img/gym.jpg" alt="Fitness Center">
           <p>Stay fit with our state-of-the-art fitness center.</p>
         </div>
         <a href="fitness.html" class="btn">Explore Gym</a>

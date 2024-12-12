@@ -471,3 +471,74 @@ iframe {
   color: gold;
 }
 
+/* responsivitet */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  header .logo {
+    margin-bottom: 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-image {
+    height: 250px;
+  }
+
+  .service-item {
+    width: 45%;
+  }
+
+  .reviews {
+    padding: 20px;
+  }
+
+  .review-card {
+    font-size: 0.9em;
+  }
+
+  .gallery-item {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  header nav ul {
+    gap: 5px;
+  }
+
+  .service-item,
+  .room-item {
+    width: 100%;
+  }
+
+  .gallery-item {
+    width: 100%;
+    height: auto;
+  }
+
+  .reviews h2 {
+    font-size: 1.8em;
+  }
+
+  .review-card h3 {
+    font-size: 1.2em;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}

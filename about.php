@@ -35,10 +35,10 @@
         With its signature amenities, celebrity appeal, and a reputation as the unofficial red carpet of the Met Gala, The Mark is more than a hotel – it's a destination.
       </p>
       <div class="image-grid">
-        <img src="the-mark-lobby.jpg" alt="The Mark Hotel Lobby">
-        <img src="the-mark-penthouse.jpg" alt="The Mark Penthouse Suite">
-        <img src="the-mark-dining.jpg" alt="The Mark Dining Area">
-        <img src="the-mark-view.jpg" alt="View from The Mark Penthouse">
+        <img src="./Img/the-mark-lobby.jpg" alt="The Mark Hotel Lobby">
+        <img src="./Img/the-mark-penthouse.jpg" alt="The Mark Penthouse Suite">
+        <img src="./Img/the-mark-dining.jpg" alt="The Mark Dining Area">
+        <img src="./Img/the-mark-view.jpg" alt="View from The Mark Penthouse">
       </div>
     </section>
   </main>

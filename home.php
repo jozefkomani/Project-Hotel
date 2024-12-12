@@ -12,22 +12,23 @@
       <h1>The Mark New York</h1>
     </div>
     <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="location.html">Location</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="login.html">Login</a></li>
-      </ul>
-    </nav>
+  <ul>
+    <li><a href="home.php">Home</a></li>
+    <li><a href="about.php">About Us</a></li>
+    <li><a href="products.php">Products</a></li>
+    <li><a href="location.php">Location</a></li>
+    <li><a href="contact.php">Contact Us</a></li>
+    <li><a href="reviews.php">Reviews</a></li>
+    <li><a href="gallery.php">Gallery</a></li>
+    <li><a href="login.php">Login</a></li>
+  </ul>
+</nav>
+
   </header>
 
   <main>
     <section class="hero">
-      <img src="hotel-hero.jpg" alt="Luxury Hotel" class="hero-image">
+      <img src="./Img/hotel-hero.jpg" alt="Luxury Hotel" class="hero-image">
       <div class="hero-text">
         <h2>Welcome to The Mark New York</h2>
         <p>Your ultimate destination for comfort and luxury.</p>
@@ -45,37 +46,37 @@
       <h2>Our Services</h2>
       <div class="service-list">
         <div class="service-item">
-          <img src="room.jpg" alt="Room Service">
+          <img src="./Img/room.jpg" alt="Room Service">
           <h3>Luxury Rooms</h3>
           <p>Experience unmatched comfort with our premium rooms.</p>
         </div>
         <div class="service-item">
-          <img src="spa.jpg" alt="Spa Service">
+          <img src="./Img/spa.jpg" alt="Spa Service">
           <h3>Spa & Wellness</h3>
           <p>Relax and rejuvenate with our exclusive spa services.</p>
         </div>
         <div class="service-item">
-          <img src="dining.jpg" alt="Dining Service">
+          <img src="./Img/dining.jpg" alt="Dining Service">
           <h3>Fine Dining</h3>
           <p>Enjoy exquisite meals prepared by our world-class chefs.</p>
         </div>
         <div class="service-item">
-          <img src="massage.jpg" alt="Relaxing Massage">
+          <img src="./Img/massage.jpg" alt="Relaxing Massage">
           <h3>Massages</h3>
           <p>Indulge in a serene massage experience with our professionals.</p>
         </div>
         <div class="service-item">
-          <img src="weights.jpg" alt="Fitness Center">
+          <img src="./Img/weights.jpg" alt="Fitness Center">
           <h3>Fitness Center</h3>
           <p>Stay active with our state-of-the-art gym facilities.</p>
         </div>
         <div class="service-item">
-          <img src="yoga.jpg" alt="Yoga Classes">
+          <img src="./Img/yoga.jpg" alt="Yoga Classes">
           <h3>Yoga Classes</h3>
           <p>Find your inner balance with guided yoga sessions.</p>
         </div>
         <div class="service-item">
-          <img src="event-hosting.jpg" alt="Event Hosting">
+          <img src="./Img/event-hosting.jpg" alt="Event Hosting">
           <h3>Event Hosting</h3>
           <p>Celebrate your special moments in elegance and style.</p>
         </div>
