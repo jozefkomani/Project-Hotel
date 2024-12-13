@@ -33,10 +33,10 @@
         <h2>Welcome to The Mark New York</h2>
         <p>Your ultimate destination for comfort and luxury.</p>
         <div class="hero-buttons">
-          <a href="location.html" class="btn">Explore Location</a>
-          <a href="contactus.html" class="btn btn-secondary">Book Now</a>
-          <a href="gallery.html" class="btn btn-secondary">View Rooms</a>
-          <a href="special-offers.html" class="btn btn-secondary">Special Offers</a>
+          <a href="location.php" class="btn">Explore Location</a>
+          <a href="contactus.php" class="btn btn-secondary">Book Now</a>
+          <a href="gallery.php" class="btn btn-secondary">View Rooms</a>
+          <a href="products.php" class="btn btn-secondary">Special Offers</a>
         </div>
       </div>
     </section>

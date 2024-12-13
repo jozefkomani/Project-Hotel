@@ -33,14 +33,14 @@
           <h3>Luxury Room</h3>
           <p>Spacious and elegantly designed with premium amenities.</p>
           <p class="price">$350 per night</p>
-          <a href="book-now.html" class="btn">Book Now</a>
+          <a href="book-now.php" class="btn">Book Now</a>
         </div>
         <div class="room-item">
           <img src="./Img/executive-suite.jpg" alt="Executive Suite">
           <h3>Executive Suite</h3>
           <p>A premium suite with stunning views and top-tier services.</p>
           <p class="price">$550 per night</p>
-          <a href="book-now.html" class="btn">Book Now</a>
+          <a href="book-now.php" class="btn">Book Now</a>
         </div>
       </div>
 
@@ -50,7 +50,7 @@
           <img src="./Img/spa.jpg" alt="Spa & Wellness">
           <p>Relax and rejuvenate with our exclusive spa treatments.</p>
         </div>
-        <a href="book-spa.html" class="btn">Book Spa Treatment</a>
+        <a href="book-spa.php" class="btn">Book Spa Treatment</a>
       </section>
 
       <section class="service">
@@ -59,7 +59,7 @@
           <img src="./Img/restaurant.jpg" alt="Fine Dining">
           <p>Indulge in exquisite meals prepared by our world-class chefs.</p>
         </div>
-        <a href="menu.html" class="btn">Explore Menu</a>
+        <a href="menu.php" class="btn">Explore Menu</a>
       </section>
 
       <section class="service">
@@ -68,7 +68,7 @@
           <img src="./Img/gym.jpg" alt="Fitness Center">
           <p>Stay fit with our state-of-the-art fitness center.</p>
         </div>
-        <a href="fitness.html" class="btn">Explore Gym</a>
+        <a href="fitness.php" class="btn">Explore Gym</a>
       </section>
 
     </section>
