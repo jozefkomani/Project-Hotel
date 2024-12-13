@@ -13,11 +13,11 @@
     </div>
     <nav>
       <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="location.html">Location</a></li>
-        <li><a href="fitness.html">Fitness</a></li>
+        <li><a href="home.php">Home</a></li>
+        <li><a href="products.php">Products</a></li>
+        <li><a href="contact.php">Contact</a></li>
+        <li><a href="location.php">Location</a></li>
+        <li><a href="fitness.php">Fitness</a></li>
       </ul>
     </nav>
   </header>

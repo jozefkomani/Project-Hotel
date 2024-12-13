@@ -13,12 +13,12 @@
     </div>
     <nav>
       <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="location.html">Location</a></li>
+        <li><a href="home.php">Home</a></li>
+        <li><a href="about.php">About Us</a></li>
+        <li><a href="products.php">Products</a></li>
+        <li><a href="news.php">News</a></li>
+        <li><a href="contact.php">Contact Us</a></li>
+        <li><a href="location.php">Location</a></li>
       </ul>
     </nav>
   </header>
