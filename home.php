@@ -1,3 +1,24 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "hotel_management";
+
+$conn = new mysqli($servername, $username, $password, $database);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql_hero = "SELECT * FROM hero LIMIT 1";
+$result_hero = $conn->query($sql_hero);
+$hero = $result_hero->fetch_assoc();
+
+$sql_services = "SELECT * FROM services";
+$result_services = $conn->query($sql_services);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,10 +49,10 @@
 
   <main>
     <section class="hero">
-      <img src="./Img/hotel-hero.jpg" alt="Luxury Hotel" class="hero-image">
+      <img src="<?php echo $hero['image_url']; ?>" alt="Luxury Hotel" class="hero-image">
       <div class="hero-text">
-        <h2>Welcome to The Mark New York</h2>
-        <p>Your ultimate destination for comfort and luxury.</p>
+        <h2><?php echo $hero['title']; ?></h2>
+        <p><?php echo $hero['description']; ?></p>
         <div class="hero-buttons">
           <a href="location.php" class="btn">Explore Location</a>
           <a href="contactus.php" class="btn btn-secondary">Book Now</a>
@@ -40,50 +61,20 @@
         </div>
       </div>
     </section>
-    
 
     <section class="services">
       <h2>Our Services</h2>
       <div class="service-list">
+        <?php while ($service = $result_services->fetch_assoc()) { ?>
         <div class="service-item">
-          <img src="./Img/room.jpg" alt="Room Service">
-          <h3>Luxury Rooms</h3>
-          <p>Experience unmatched comfort with our premium rooms.</p>
+          <img src="<?php echo $service['image_url']; ?>" alt="<?php echo $service['name']; ?>">
+          <h3><?php echo $service['name']; ?></h3>
+          <p><?php echo $service['description']; ?></p>
         </div>
-        <div class="service-item">
-          <img src="./Img/spa.jpg" alt="Spa Service">
-          <h3>Spa & Wellness</h3>
-          <p>Relax and rejuvenate with our exclusive spa services.</p>
-        </div>
-        <div class="service-item">
-          <img src="./Img/dining.jpg" alt="Dining Service">
-          <h3>Fine Dining</h3>
-          <p>Enjoy exquisite meals prepared by our world-class chefs.</p>
-        </div>
-        <div class="service-item">
-          <img src="./Img/massage.jpg" alt="Relaxing Massage">
-          <h3>Massages</h3>
-          <p>Indulge in a serene massage experience with our professionals.</p>
-        </div>
-        <div class="service-item">
-          <img src="./Img/weights.jpg" alt="Fitness Center">
-          <h3>Fitness Center</h3>
-          <p>Stay active with our state-of-the-art gym facilities.</p>
-        </div>
-        <div class="service-item">
-          <img src="./Img/yoga.jpg" alt="Yoga Classes">
-          <h3>Yoga Classes</h3>
-          <p>Find your inner balance with guided yoga sessions.</p>
-        </div>
-        <div class="service-item">
-          <img src="./Img/event-hosting.jpg" alt="Event Hosting">
-          <h3>Event Hosting</h3>
-          <p>Celebrate your special moments in elegance and style.</p>
-        </div>
+        <?php } ?>
       </div>
     </section>
-
-    
+  </main>
 
   <footer>
     <p>© 2024 The Mark New York. All rights reserved.</p>

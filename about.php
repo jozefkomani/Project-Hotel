@@ -1,3 +1,24 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "hotel_management";
+
+$conn = new mysqli($servername, $username, $password, $database);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT * FROM about WHERE id = 1";
+$result = $conn->query($sql);
+$about = $result->fetch_assoc();
+
+$sql_images = "SELECT * FROM about_images WHERE about_id = 1";
+$result_images = $conn->query($sql_images);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,26 +45,16 @@
 
   <main>
     <section class="about">
-      <h2>About The Mark Hotel</h2>
-      <p>
-        Located on the Upper East Side of Manhattan, The Mark Hotel combines historic elegance with modern luxury. Originally built in 1927, this iconic building was redesigned by the acclaimed Jacques Grange in 2009, offering a unique experience for every guest.
-      </p>
-      <p>
-        From the luxurious Jean-Georges restaurant to exclusive services like a bespoke fragrance by Frédéric Malle, The Mark Hotel redefines sophistication. Our Penthouse Suite, the largest in the United States, offers unparalleled luxury and breathtaking views of Central Park and the Manhattan skyline.
-      </p>
-      <p>
-        With its signature amenities, celebrity appeal, and a reputation as the unofficial red carpet of the Met Gala, The Mark is more than a hotel – it's a destination.
-      </p>
+      <h2><?php echo $about['title']; ?></h2>
+      <p><?php echo $about['description']; ?></p>
       <div class="image-grid">
-        <img src="./Img/the-mark-lobby.jpg" alt="The Mark Hotel Lobby">
-        <img src="./Img/the-mark-penthouse.jpg" alt="The Mark Penthouse Suite">
-        <img src="./Img/the-mark-dining.jpg" alt="The Mark Dining Area">
-        <img src="./Img/the-mark-view.jpg" alt="View from The Mark Penthouse">
+        <?php while ($image = $result_images->fetch_assoc()): ?>
+          <img src="<?php echo $image['image_url']; ?>" alt="<?php echo $image['alt_text']; ?>">
+        <?php endwhile; ?>
       </div>
     </section>
   </main>
 
- 
   <footer>
     <p>© 2024 The Mark New York. All rights reserved.</p>
   </footer>
