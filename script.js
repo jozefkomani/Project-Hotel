@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
       loginForm.style.display = "block";
     });
   
-    // validimi register
     registerForm.addEventListener("submit", (e) => {
       e.preventDefault();
       const email = document.getElementById("register-email").value;

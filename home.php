@@ -1,4 +1,6 @@
 <?php
+session_start(); // Fillon sesionin
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -18,7 +20,6 @@ $sql_services = "SELECT * FROM services";
 $result_services = $conn->query($sql_services);
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,18 +34,23 @@ $result_services = $conn->query($sql_services);
       <h1>The Mark New York</h1>
     </div>
     <nav>
-  <ul>
-    <li><a href="home.php">Home</a></li>
-    <li><a href="about.php">About Us</a></li>
-    <li><a href="products.php">Products</a></li>
-    <li><a href="location.php">Location</a></li>
-    <li><a href="contact.php">Contact Us</a></li>
-    <li><a href="reviews.php">Reviews</a></li>
-    <li><a href="gallery.php">Gallery</a></li>
-    <li><a href="login.php">Login</a></li>
-  </ul>
-</nav>
-
+      <ul>
+        <li><a href="home.php">Home</a></li>
+        <li><a href="about.php">About Us</a></li>
+        <li><a href="products.php">Products</a></li>
+        <li><a href="location.php">Location</a></li>
+        <li><a href="contact.php">Contact Us</a></li>
+        <li><a href="reviews.php">Reviews</a></li>
+        <li><a href="gallery.php">Gallery</a></li>
+        
+        <?php if (!isset($_SESSION['user_id'])): ?> 
+          <li><a href="login.php">Login</a></li>
+        <?php else: ?>
+          <li><a href="logout.php">Logout</a></li>
+        <?php endif; ?>
+        
+      </ul>
+    </nav>
   </header>
 
   <main>
