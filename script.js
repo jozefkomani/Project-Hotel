@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   
       alert("Login successful!");
-      window.location.href = "home.html"; // home page
+      window.location.href = "home.php"; 
     });
   });
   

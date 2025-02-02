@@ -14,6 +14,10 @@ $sql = "SELECT * FROM about WHERE id = 1";
 $result = $conn->query($sql);
 $about = $result->fetch_assoc();
 
+if (!$about) {
+    $about = ['title' => 'No Title Found', 'description' => 'No Description Available'];
+}
+
 $sql_images = "SELECT * FROM about_images WHERE about_id = 1";
 $result_images = $conn->query($sql_images);
 
@@ -45,18 +49,22 @@ $result_images = $conn->query($sql_images);
 
   <main>
     <section class="about">
-      <h2><?php echo $about['title']; ?></h2>
-      <p><?php echo $about['description']; ?></p>
+      <h2><?php echo htmlspecialchars($about['title']); ?></h2>
+      <p><?php echo htmlspecialchars($about['description']); ?></p>
       <div class="image-grid">
-        <?php while ($image = $result_images->fetch_assoc()): ?>
-          <img src="<?php echo $image['image_url']; ?>" alt="<?php echo $image['alt_text']; ?>">
-        <?php endwhile; ?>
+        <?php if ($result_images && $result_images->num_rows > 0): ?>
+          <?php while ($image = $result_images->fetch_assoc()): ?>
+            <img src="<?php echo htmlspecialchars($image['image_url']); ?>" alt="<?php echo htmlspecialchars($image['alt_text']); ?>">
+          <?php endwhile; ?>
+        <?php else: ?>
+          <p>No images available.</p>
+        <?php endif; ?>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2024 The Mark New York. All rights reserved.</p>
+    <p>&copy; 2024 The Mark New York. All rights reserved.</p>
   </footer>
 </body>
 </html>

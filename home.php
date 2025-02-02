@@ -1,5 +1,5 @@
 <?php
-session_start(); // Fillon sesionin
+session_start(); 
 
 $servername = "localhost";
 $username = "root";
@@ -61,7 +61,7 @@ $result_services = $conn->query($sql_services);
         <p><?php echo $hero['description']; ?></p>
         <div class="hero-buttons">
           <a href="location.php" class="btn">Explore Location</a>
-          <a href="contactus.php" class="btn btn-secondary">Book Now</a>
+          <a href="contact.php" class="btn btn-secondary">Book Now</a>
           <a href="gallery.php" class="btn btn-secondary">View Rooms</a>
           <a href="products.php" class="btn btn-secondary">Special Offers</a>
         </div>

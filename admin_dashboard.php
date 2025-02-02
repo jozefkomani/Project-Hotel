@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['emri'], $_POST['userna
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="admindashboard.css">
+    <link rel="stylesheet" href="admin.css">
     <title>Admin Dashboard</title>
 </head>
 <body>
@@ -42,15 +42,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['emri'], $_POST['userna
         <button type="submit" name="logout">Logout</button>
     </form>
 
-    <h3>Menaxho Përdoruesit</h3>
+    <h3>Menage</h3>
     <table border="1">
         <tr>
             <th>ID</th>
-            <th>Emri</th>
+            <th>Name</th>
             <th>Username</th>
             <th>Email</th>
-            <th>Roli</th>
-            <th>Fshi</th>
+            <th>Role</th>
+            <th>Delete</th>
         </tr>
         <?php
         $users = getUsers($conn);
@@ -67,17 +67,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['emri'], $_POST['userna
         ?>
     </table>
 
-    <h3>Shto Përdorues</h3>
-    <form method="post" action="admin_dashboard.php">
-        <label for="emri">Emri:</label>
-        <input type="text" id="emri" name="emri" required>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Shto</button>
-    </form>
+    <h3>Add User</h3>
+<form method="post" action="admin_dashboard.php">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <button type="submit">Add</button>
+</form>
+
 </body>
 </html>
