@@ -1,102 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
 
-        body {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            line-height: 1.6;
-            background: url('img/22.jpg') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+.container {
+    flex: 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
 
-        .container {
-            flex: 1;
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 8px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
 
-        header {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
+nav ul li {
+    margin: 0 15px;
+}
 
-        nav ul li {
-            margin: 0 15px;
-        }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1em;
-            text-transform: uppercase;
-        }
+nav ul li a:hover, .active {
+    color: #f39c12;
+}
 
-        nav ul li a:hover, .active {
-            color: #f39c12;
-        }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
+table td {
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: left;
+}
 
-        table td {
-            padding: 10px;
-            font-size: 1.2em;
-            text-align: left;
-        }
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
 
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1em;
-        }
+button {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
-        button {
-            background-color: #f39c12;
-            color: white;
-            padding: 15px 20px;
-            font-size: 1.2em;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
+button:hover {
+    background-color: #e67e22;
+}
 
-        button:hover {
-            background-color: #e67e22;
-        }
-
-        footer {
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 20px 0;
-            margin-top: auto;
-        }
- 
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px 0;
+    margin-top: auto;
+}

@@ -21,12 +21,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($conn->query($sql) === TRUE) {
         echo "<script>alert('Message sent successfully!'); window.location='contact.php';</script>";
     } else {
-        echo "upss " . $conn->error;
+        echo "Upss " . $conn->error;
     }
 }
 
 $conn->close();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,9 +35,9 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - The Mark New York</title>
     <link rel="stylesheet" href="contact.css">
-    
 </head>
 <body>
+
     <header>
         <nav>
             <ul>
@@ -52,27 +53,29 @@ $conn->close();
     <div class="container">
         <h3>Send Us a Message</h3>
         <form action="contact.php" method="POST">
-    <table>
-        <tr>
-            <td><label for="name">Full Name:</label></td>
-            <td><input type="text" name="name" id="name" required></td>
-        </tr>
-        <tr>
-            <td><label for="email">Email:</label></td>
-            <td><input type="email" name="email" id="email" required></td>
-        </tr>
-        <tr>
-            <td><label for="message">Your Message:</label></td>
-            <td><textarea name="message" id="message" rows="5" required></textarea></td>
-        </tr>
-    </table>
-    <button type="submit">Send Message</button>
-</form>
-
+            <table>
+                <tr>
+                    <td><label for="name">Full Name:</label></td>
+                    <td><input type="text" name="name" id="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Your Message:</label></td>
+                    <td><textarea name="message" id="message" rows="5" required></textarea></td>
+                </tr>
+            </table>
+            <button type="submit">Send Message</button>
+        </form>
     </div>
     
     <footer>
         <p>© 2024 The Mark New York. All rights reserved.</p>
     </footer>
+
+    <script src="slider.js"></script> 
+
 </body>
 </html>
